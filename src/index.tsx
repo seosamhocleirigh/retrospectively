@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from '@material-ui/core/styles'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import palette from "./theme/customTheme"
+import palette from './themes/customTheme'
 
 ReactDOM.render(
   <React.StrictMode>
