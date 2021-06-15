@@ -1,6 +1,4 @@
 // https://chir.ag/projects/name-that-color/#6195ED
-const palette = {
-
-}
+const palette = {}
 
 export { palette }
