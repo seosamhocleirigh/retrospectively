@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint .  --ext .tsx --ext .ts"
+    "lint": "eslint .  --ext .tsx --ext .ts",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +52,15 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "yarn eslint",
+      "yarn prettier --write",
+      "yarn test --watchAll=false --findRelatedTests --bail"
+    ]
   }
 }
